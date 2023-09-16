@@ -1,0 +1,139 @@
+:root {
+    --cor-primaria: #dc86ff;
+    --cor-secundaria: #c16df3;
+    --cor-terciaria: #a654e8;
+    --cor-quaternaria: #7021d0;
+    --preto: #000000;
+    --branco: #ffffff;
+    --fonte-principal: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-primaria)
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    background-color: var(--cor-primaria);
+    width: 80%;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+}
+
+.container__odeia {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.container__titulo{
+    font-size: 1.75em;
+    margin-top: 1em;
+    color: var(--preto);
+}
+
+.container__texto {
+    margin: 0.75em 0;
+}
+
+.container__imagem {
+    width: 100%;
+}
+
+.container__botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__aceita {
+    margin: 0.5em;
+}
+
+#continuar {
+    height: 4em;
+    width: 6em;
+    background-color: var(--cor-terciaria);
+    border: 2px solid var(--branco);
+    border-radius: 10px;
+    color: white;
+    margin: 0 1em;
+}
+
+.rodape {
+    margin-top: 8.5em;
+    font-size: 0.5em;
+}
+
+#sim {
+    margin-left: -7em;
+    height: 4em;
+    width: 6em;
+    background-color: var(--cor-terciaria);
+    border: 2px solid var(--branco);
+    border-radius: 10px;
+    color: white;
+}
+
+#nao {
+    position: absolute;
+    height: 4em;
+    width: 6em;
+    background-color: var(--cor-terciaria);
+    border: 2px solid var(--branco);
+    border-radius: 10px;
+    color: var(--branco);
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .container__titulo{
+        font-size: 3em;
+        margin-top: 1em;
+    }
+
+    .container__texto {
+        margin: 0.5em 0;
+        font-size: 1.5em;
+        color: var(--preto);
+    }
+
+    .container__imagem {
+        width: 50%;
+    }
+
+    .container__aceita {
+        font-size: 3.5em;
+    }
+
+    .rodape {
+        display: none;
+    }
+
+    #sim, #nao {
+        font-size: 2em;
+        height: 3em;
+        width: 4em;
+    }
+    
+    #continuar {
+        font-size: 2em;
+        height: 3em;
+        width: 4em;
+    }
+
+    #sim {
+        margin-left: -4em;
+    }
+}

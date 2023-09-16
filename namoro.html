@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quer namorar comigo?</title>
+
+</head>
+
+<body>
+
+    <section class="container">
+        <div>
+            <h1 class="container__titulo">Mesmo depois de um ano</h1>
+            <p class="container__texto">A paixão ainda é igual</p>
+            <p class="container__texto">E o meu amor fica cada dia mais forte</p>
+            <img src="assets/beijo.gif" alt="" class="container__imagem">
+            <p class="container__texto">Quero viver sempre ao seu lado</p>
+            <p class="container__texto">Quero ver sempre seu sorriso</p>
+            <p class="container__texto">Quero casar com você, Noah</p>
+
+            <img src="assets/anel.gif" alt="" class="container__imagem">
+
+            <h2 class="container__aceita">Aceita namorar comigo? </h2>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/watch?v=ivHE7pQEEHI"><button id="sim"> Sim! </button></a>
+            <button onmouseover="fuja()" id="nao"> Não! </button>
+        </div>
+        </div>
+
+        <script>
+            function fuja() {
+                var botaoNao = document.getElementById("nao")
+
+                var larguraJanela = window.innerWidth;
+                var alturaJanela = window.innerHeight;
+
+                var maxX = larguraJanela - botaoNao.offsetWidth;
+                var maxY = alturaJanela - botaoNao.offsetHeight;
+
+                var aleatorioX = Math.floor(Math.random() * maxX);
+                var aleatorioY = Math.floor(Math.random() * maxY);
+
+                botaoNao.style.left = aleatorioX + "px";
+                botaoNao.style.top = aleatorioY + "px";
+
+
+            }
+        </script>
+
+
+
+</body>
+<footer class="rodape"> 
+    <p>Por favor, esteja ciente de que não aceito devolução para nenhum dos nossos produtos, incluindo aqueles que possam ter sido recebidos danificados. Essa política se deve à natureza dos itens que vendemos e à manutenção de sua qualidade.</p>
+    <p>Antes de fazer sua compra, recomendo revisar cuidadosamente sua seleção.</p>
+    <p>Agradeço por me escolher.</p>
+    <p>Atenciosamente, Victor Hugo</p>
+</footer>
+
+</html>
